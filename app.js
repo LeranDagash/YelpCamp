@@ -21,8 +21,8 @@ mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
-// mongoose.connect("proccess.env.DATABASEURL");
-mongoose.connect("proccess.env.DATABASEURL", {
+//mongoose.connect("mongodb://localhost/yelp_camp");
+mongoose.connect("mongodb+srv://Leran:158613963@yelpcamp-wu0ov.mongodb.net/test?retryWrites=true&w=majority", {
 	useNewUrlParser: true,
 	useCreateIndex: true
 }).then(() => {
