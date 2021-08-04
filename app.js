@@ -22,16 +22,7 @@ mongoose.set('useCreateIndex', true);
 mongoose.set('useUnifiedTopology', true);
 
 
-//mongoose.connect("mongodb://localhost/yelp_camp");
 mongoose.connect(process.env.DATABASEURL);
-// mongoose.connect("mongodb+srv://Leran:158613963@yelpcamp-wu0ov.mongodb.net/test?retryWrites=true&w=majority", {
-// 	useNewUrlParser: true,
-// 	useCreateIndex: true
-// }).then(() => {
-// 	console.log("Connected to DB!");
-// }).catch(err => {
-// 	console.log("ERROR:", err.message);
-// });
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
